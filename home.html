@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="task_02.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Stopwatch</a></li>
+        </ul>
+    </nav>
+
+    <div class="about">
+        <h1>About Us</h1>
+        <p>Welcome to our Stopwatch Web application! This application allows you to measure time intervals accurately using a digital stopwatch.</p>
+        
+        <h2>Instructions</h2>
+        <ol>
+            <li>Press the "Start" button to begin timing.</li>
+            <li>You can press the "Lap" button to record lap times while the stopwatch is running.</li>
+            <li>To stop the stopwatch, press the "Stop" button.</li>
+            <li>If you wish to reset the stopwatch and clear all lap times, press the "Reset" button.</li>
+        </ol>
+    </div>
+    <div class="stopwatch">
+        <div class="display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">000</span>
+        </div>
+        <div class="controls">
+            <button id="startStopButton" onclick="startStop()">Start</button>
+            <button id="lapResetButton" onclick="lapReset()">Lap</button>
+            <button id="stopButton" onclick="stop()" disabled>Stop</button>
+        <button id="resetButton" onclick="reset()" disabled>Reset</button>
+        </div>
+        <ul class="laps" id="laps"></ul>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Stopwatch Web application. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="task_02.js"></script>
+</body>
+</html>
